@@ -22,17 +22,18 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-8 h-8 object-contain" />
-          <p className="px-2 text-white text-[18px] font-bold cursor-pointer flex">
-            Andrea &nbsp;
-            <span className="sm:block hidden"> | Chem Engineer</span>
-          </p>
+          {/* <p className="px-2 text-white text-[18px] font-bold cursor-pointer flex"> */}
+          {/*   Andrea &nbsp; */}
+          {/*   <span className="sm:block hidden"> | Chem Engineer</span> */}
+          {/* </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((Link) => (
             <li
               key={Link.id}
-              className={`${active === Link.title ? "text-[#cffc49]" : "text-secondary"
-                } hover:text-[#cffc49] text-[18px] font-medium cursor-pointer`}
+              className={`${
+                active === Link.title ? "text-[#cffc49]" : "text-secondary"
+              } hover:text-[#cffc49] text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
               <a href={`#${Link.id}`}>{Link.title}</a>
@@ -48,15 +49,17 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${!toggle ? "hidden" : "flex"
-              } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((Link) => (
                 <li
                   key={Link.id}
-                  className={`${active === Link.title ? "text-white" : "text-secondary"
-                    } font-poppins font-medium cursor-pointer text-[16px]`}
+                  className={`${
+                    active === Link.title ? "text-[#cffc49]" : "text-secondary"
+                  } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(Link.title);

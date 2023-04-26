@@ -20,7 +20,7 @@ const Computers = ({ isMobile }) => {
       />
       <spotLight
         position={[-20, 33, -20]}
-        angle={0.12}
+        angle={0.13}
         penumbra={1}
         intensity={0.3}
         castShadow
@@ -30,7 +30,7 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, 0] : [0, -3.25, 0]}
         rotation={[-0.01, 0.9, -0.1]}
       />
     </mesh>
@@ -42,10 +42,10 @@ const Benzene = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.1} groundColor="black" />
+      <hemisphereLight intensity={0.2} groundColor="black" />
       <spotLight
         position={[-20, 33, -20]}
-        angle={0.12}
+        angle={0.13}
         penumbra={1}
         intensity={0.1}
         castShadow
@@ -55,7 +55,7 @@ const Benzene = ({ isMobile }) => {
       <primitive
         object={benzene.scene}
         scale={isMobile ? 0.6 : 0.65}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        position={isMobile ? [0, -3, 0] : [0, -3.25, 0]}
         rotation={[-0, 0.9, -0]}
       />
     </mesh>
