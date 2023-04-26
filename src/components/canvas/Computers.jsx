@@ -9,21 +9,54 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.5} groundColor="black" />
+      <spotLight
+        position={[60, 33, 60]}
+        angle={0.12}
+        penumbra={1}
+        intensity={0.5}
+        castShadow
+        shadow-mapSize={1024}
+      />
       <spotLight
         position={[-20, 33, -20]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={0.3}
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={0.5} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, 0.9, -0.1]}
+      />
+    </mesh>
+  );
+};
+
+const Benzene = ({ isMobile }) => {
+  const benzene = useGLTF("./desktop_pc/moleculeBenz.gltf");
+
+  return (
+    <mesh>
+      <hemisphereLight intensity={0.1} groundColor="black" />
+      <spotLight
+        position={[-20, 33, -20]}
+        angle={0.12}
+        penumbra={1}
+        intensity={0.1}
+        castShadow
+        shadow-mapSize={1024}
+      />
+      <pointLight intensity={0.5} />
+      <primitive
+        object={benzene.scene}
+        scale={isMobile ? 0.6 : 0.65}
+        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        rotation={[-0, 0.9, -0]}
       />
     </mesh>
   );
@@ -68,6 +101,7 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        <Benzene isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
