@@ -20,6 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
     },
   },
