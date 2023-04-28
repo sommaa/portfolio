@@ -4,10 +4,10 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
+    <div className="flex flex-row flex-wrap justify-center">
       {technologies.map((technology) => (
         <div
-          className="w-32 h-32 bg-gradient-radial from-primary via-[#2b2e32] to-primary to-70%"
+          className="w-40 h-40 bg-gradient-radial from-primary via-[#464044] to-primary to-50% flex justify-center items-center"
           key={technology.name}
         >
           <BallCanvas icon={technology.icon} />

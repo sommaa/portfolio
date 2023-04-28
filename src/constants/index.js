@@ -11,11 +11,12 @@ import {
   blender,
   bash,
   openfoam,
-  carrent,
-  jobit,
-  tripguide,
   reactjs,
   neovim,
+  spray,
+  emulsions,
+  opensmoke,
+  mantis,
 } from "../assets";
 
 export const navLinks = [
@@ -126,67 +127,81 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Spray Dryer Model",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "One dimensional model for co-current Sray-Dryer, improved from SuperChem group at Politecnico of Milan trough OpenFoam 3d analisys model",
     tags: [
       {
-        name: "react",
+        name: "Matlab",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "OpenFoam",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: spray,
+    source_code_link: "https://github.com/sommaa/spray_dryer",
   },
   {
-    name: "Job IT",
+    name: "Pickering Emulsion Models",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mathematical models to predict shape size and behavior of pickering emulsions in Matlab",
     tags: [
       {
-        name: "react",
+        name: "Matlab",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Blender",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: emulsions,
+    source_code_link: "https://github.com/sommaa/pickering_emulsions",
   },
   {
-    name: "Trip Guide",
+    name: "Mantis",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A set of config files to personalize your i3wm, and the a great part of the most used apps: Neovim, shell, firefox, polybar, app launcher etc... Everything with a common colorscheme!",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Lua",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Shell",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: mantis,
+    source_code_link: "https://github.com/sommaa/Mantis",
+  },
+
+  {
+    name: "IDT model with OSpp",
+    description:
+      "Correlation and script to fit ignition delay times of fuels with NTC region in matlab and OpenSmoke, a opensource tool developed by CRECK modeling group.",
+    tags: [
+      {
+        name: "Matlab",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OpenSmoke",
+        color: "green-text-gradient",
+      },
+    ],
+    image: opensmoke,
+    source_code_link: "https://github.com/sommaa/IDT_OSpp",
   },
 ];
 
