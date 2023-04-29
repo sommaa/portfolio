@@ -7,17 +7,16 @@ const Hero = () => {
       <div
         className={`absolute inset-0 mt-auto max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-center gap-5`}
       >
-        <div className="w-full">
-          <h1 className={`${styles.heroHeadTextHey} text-white`}>
-            Hey there! <br />
-          </h1>
+        <div>
+          <h1 className={`${styles.heroHeadTextHey} text-white`}>Hey there!</h1>
           <h1 className={`${styles.heroHeadText} text-white`}>
             I'm <span className="text-[#cffc49]">Andrea</span>.
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
             I am a master's degree student of chemE,
-            <br /> interested in mathematical models,
-            <br /> linux and gfx.
+            <br className="sm:block hidden" /> interested in mathematical
+            models,
+            <br className="sm:block hidden" /> linux and gfx.
           </p>
         </div>
       </div>

@@ -16,7 +16,7 @@ const Tech = () => {
       </motion.div>
       <div className="w-full flex">
         <motion.p
-          variants={fadeIn("left", "", 0.2, 1)}
+          variants={fadeIn("", "", 0.2, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I always try to update my tools and to learn new things, anyways I
