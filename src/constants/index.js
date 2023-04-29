@@ -26,7 +26,7 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Works",
   },
   {
     id: "contact",
@@ -57,44 +57,54 @@ const technologies = [
   {
     name: "Matlab",
     icon: matlab,
+    exp: 4,
   },
   {
     name: "Python",
     icon: python,
+    exp: 3,
   },
   {
     name: "OpenFoam",
     icon: cpp,
+    exp: 1,
   },
   {
     name: "Blender",
     icon: blender,
+    exp: 3,
   },
   {
     name: "OF",
     icon: openfoam,
+    exp: 3,
   },
 
   {
     name: "Bash",
     icon: bash,
+    exp: 2,
   },
   {
     name: "React",
     icon: reactjs,
+    exp: 2,
   },
 
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    exp: 3,
   },
   {
     name: "git",
     icon: git,
+    exp: 3,
   },
   {
     name: "neovim",
     icon: neovim,
+    exp: 3,
   },
 ];
 
@@ -127,9 +137,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Spray Dryer Model",
+    name: "Spray Dryer Model from SuPER",
     description:
-      "One dimensional model for co-current Sray-Dryer, improved from SuperChem group at Politecnico of Milan trough OpenFoam 3d analisys model",
+      "One dimensional model for co-current Sray-Dryer, improved from SuPER group at Politecnico of Milan trough OpenFoam 3d analisys model",
     tags: [
       {
         name: "Matlab",
@@ -146,7 +156,7 @@ const projects = [
   {
     name: "Pickering Emulsion Models",
     description:
-      "Mathematical models to predict shape size and behavior of pickering emulsions in Matlab",
+      "Mathematical models to predict shape size and behavior of pickering emulsions in Matlab, based on langevin integrator, theoretical models and experimental data",
     tags: [
       {
         name: "Matlab",
@@ -187,7 +197,7 @@ const projects = [
   },
 
   {
-    name: "IDT model with OSpp",
+    name: "Ignition Delay Time model with OSpp",
     description:
       "Correlation and script to fit ignition delay times of fuels with NTC region in matlab and OpenSmoke, a opensource tool developed by CRECK modeling group.",
     tags: [
