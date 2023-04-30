@@ -28,6 +28,7 @@ import emulsions from "./emulsions.png";
 import opensmoke from "./opensmoke.png";
 import mantis from "./mantis.png";
 import clichart from "./clichart.png";
+import star from "./star.png";
 
 export {
   logo,
@@ -57,4 +58,5 @@ export {
   opensmoke,
   mantis,
   clichart,
+  star,
 };

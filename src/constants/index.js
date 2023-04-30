@@ -127,7 +127,7 @@ const projects = [
       },
     ],
     image: spray,
-    source_code_link: "https://github.com/sommaa/spray_dryer",
+    source_code_link: "sommaa/spray_dryer",
   },
   {
     name: "Pickering Emulsion Models",
@@ -148,12 +148,12 @@ const projects = [
       },
     ],
     image: emulsions,
-    source_code_link: "https://github.com/sommaa/pickering_emulsions",
+    source_code_link: "sommaa/pickering_emulsions",
   },
   {
-    name: "Mantis",
+    name: "Mantis, not only a colorscheme",
     description:
-      "A set of config files to personalize your i3wm, and the a great part of the most used apps: Neovim, shell, firefox, polybar, app launcher etc... Everything with a common colorscheme!",
+      "A set of config files to personalize your i3wm, and the a great part of the most used apps: Neovim, shell, firefox, polybar, app launcher etc... ",
     tags: [
       {
         name: "Python",
@@ -169,7 +169,7 @@ const projects = [
       },
     ],
     image: mantis,
-    source_code_link: "https://github.com/sommaa/Mantis",
+    source_code_link: "sommaa/Mantis",
   },
 
   {
@@ -187,7 +187,7 @@ const projects = [
       },
     ],
     image: opensmoke,
-    source_code_link: "https://github.com/sommaa/IDT_OSpp",
+    source_code_link: "sommaa/IDT_OSpp",
   },
   {
     name: "CliChart, a simple chart in python",
@@ -204,7 +204,7 @@ const projects = [
       },
     ],
     image: clichart,
-    source_code_link: "https://github.com/sommaa/CliChart",
+    source_code_link: "sommaa/CliChart",
   },
 ];
 
